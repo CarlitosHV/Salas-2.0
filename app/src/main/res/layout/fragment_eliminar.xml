@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment_eliminar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/toolbareliminar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/colorPrimaryVariant"
+                    app:title="@string/eliminar"/>
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <TextView
+                android:id="@+id/tvdpInfoProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nombreprod"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivFotoprodeliminar"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/imagenprod"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="25dp"
+                    app:endIconMode="clear_text"
+                    app:startIconContentDescription="@string/idprodbuscar"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/idprodeliminar"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="@string/idprodbuscar"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnconsultareliminar"
+                    style="@style/Widget.Material3.Button.Icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_gravity="center"
+                    android:text="@string/botonbuscar"
+                    android:textSize="20sp"
+                     />
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                app:endIconMode="clear_text"
+                app:startIconContentDescription="@string/nombreprod"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nombreprodeliminar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="16dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                app:endIconMode="clear_text"
+                app:startIconContentDescription="@string/categoriaprod"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/categoriaeliminar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="16dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                app:endIconMode="clear_text"
+                app:startIconContentDescription="@string/descripcionprod"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/descriptionprodeliminar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:maxLines="5"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="16dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btninactivar"
+                    style="@style/Widget.Material3.Button.ElevatedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/inactivar"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="25dp"
+                    android:textSize="20sp"
+                     />
+
+                <Button
+                    android:id="@+id/btneliminar"
+                    style="@style/Widget.Material3.Button.ElevatedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/eliminar"
+                    android:textSize="20sp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".nuevo_usuario">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/toolbarconsultar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/colorPrimaryVariant"
+                    app:title="@string/consultar"/>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:contentDescription="@string/imagenusuario"
+                android:background="@drawable/icon"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+
+                app:endIconMode="clear_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.98"
+                app:startIconContentDescription="@string/usuario"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/campousuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/usuario"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="password_toggle"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+                app:startIconContentDescription="@string/contrasena"
+                tools:layout_editor_absoluteX="2dp">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:hint="@string/contrasena"
+                    android:inputType="textPassword"
+                    app:layout_constraintTop_toTopOf="@+id/textInputLayout"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/confirmarcontra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="password_toggle"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+                app:startIconContentDescription="@string/confirmarcontrasena"
+                tools:layout_editor_absoluteX="2dp">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/confirmarcontrasenia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:hint="@string/confirmarcontrasena"
+                    android:inputType="textPassword"
+                    app:layout_constraintTop_toTopOf="@+id/textInputLayout"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btnregistro"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:text="@string/registrar"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

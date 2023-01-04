@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">Salas</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="label_login">Iniciar sesión</string>
+    <string name="usuario">Escribe tu usuario</string>
+    <string name="correo">Escribe tu correo</string>
+    <string name="nombre">Usuario</string>
+    <string name="fechaprestamo">Fecha préstamo</string>
+    <string name="fechadevuelto">Fecha de devolución</string>
+    <string name="comentario">Comentarios</string>
+    <string name="email">Escribe tu email</string>
+    <string name="contrasena">Escribe tu contraseña</string>
+    <string name="iniciar">Iniciar sesión</string>
+    //Fragments
+    <string name="scroll">Scroll</string>
+    <string name="anadir">Salones</string>
+    <string name="cuenta">Mi cuenta</string>
+    <string name="modificar">Perfil</string>
+    <string name="consultar">Consultar producto</string>
+    <string name="edicion_usuario"> Editar usuario </string>
+    <string name="eliminar">Eliminar</string>
+    <string name="editar">Editar</string>
+    <string name="inactivar">Inactivar</string>
+    <string name="listar">Buscar</string>
+    <string name="listarina">Agregar</string>
+    <string name="creditos">Créditos</string>
+    <string name="fragmentagregar">Añadir fragment</string>
+    <string name="fragmentlistaractivos">Listar activos fragment</string>
+    <string name="fragmentlistarinactivos">Listar inactivos fragment</string>
+    <string name="agregaprod">Agregar producto</string>
+    <string name="idprod">Agregar ID del producto</string>
+    <string name="idprodbuscar">Buscar ID</string>
+    <string name="botonbuscar">Buscar</string>
+    <string name="nombreprod">Nombre producto</string>
+    <string name="categoriaprod">Inicio</string>
+    <string name="configuracion">Configuración</string>
+    <string name="registros"> Registros </string>
+    <string name="solicitudes"> Intereses </string>
+    <string name="prestamos"> Préstamos </string>
+    <string name="usuarios"> Usuarios </string>
+    <string name="compras"> Compras </string>
+    <string name="pedidos"> Pedidos </string>
+    <string name="Ventas"> Ventas </string>
+    <string name="imagenprod">Imagen del producto</string>
+    <string name="descripcionprod">Describe el producto</string>
+    <string name="fotoprod">Tomar foto del salón</string>
+    <string name="guardarprod">Guardar</string>
+    <string name="modificarprod">Modificar</string>
+    <string name="inicio">Inicio</string>
+    <string name="ubi">Ubicación</string>
+    <string name="headervideo">Inicio</string>
+    <string name="textvideo">Este video explica el funcionamiento de la app</string>
+    <string name="labelprod">Producto</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="registrar">Abrir Cuenta</string>
+    <string name="imagenusuario" />
+    <string name="confirmarcontrasena">Confirmar contraseña</string>
+    <string name="checkadmineditar">Convertir a administrador</string>
+    //Strings para el menú del administrador
+    <string name="admincategorias"> Categorías </string>
+    <string name="adminusuarios"> Usuarios </string>
+    <string name="adminregistros"> Registros </string>
+    <string name="adminsolicitudes"> Solicitudes </string>
+    <string name="adminconfiguracion"> Configuración </string>
+    //Strings para el cardview de usuarios
+    <string name="nombre_usuarios"> Usuario </string>
+    <string name="boton_confirmar"> Confirmar </string>
+    <string name="boton_cancelar"> Cancelar </string>
+    <string name="boton_olvidepass"> ¿Olvidaste tu contraseña? </string>
+    <string name="nuevacuenta"> ¿No tiene una cuenta? </string>
+    //Strings para el cardview de categorías
+    <string name="nombre_producto"> Nombre </string>
+    <string name="nombre_vendedor"> Nombre vendedor</string>
+    <string name="peso"> Peso </string>
+    <string name="vendedor"> Vendedor </string>
+    <string name="comprador"> Comprador </string>
+    <string name="precio"> Precio </string>
+    <string name="nombre_animal"> Nombre animal </string>
+    //Strings para menú de usuario
+    <string name="usuarioprestamos"> Préstamos </string>
+    <string name="usuariosolicitudes"> Solicitudes </string>
+    <string name="usuarioconfiguracion"> Configuración </string>
+    <string name="headerubi">Tus coordenadas</string>
+    <string name="coordenadas">Coordenadas</string>
+    //Strings para el fragment de configuración
+    <string name="configuracionNombre"> Ingresa el nuevo nombre </string>
+    <string name="configuracionCorreo"> Ingresa el correo </string>
+    <string name="configuracionPassword"> Ingresa la contraseña </string>
+    <string name="configuracionConfirmarPass"> Confirma la contraseña </string>
+    <string name="configuracionAceptar"> Guardar </string>
+    <string name="configuracionEditar"> Editar </string>
+    <string name="configuracionlabel"> ¿Quieres modificar algún campo? </string>
+    <string name="configuracionCancelar"> Cancelar </string>
+    //Strings para fragment de registros
+    <string name="registrosNombre"> Nombre </string>
+    <string name="registrosFecha"> Fecha </string>
+    <string name="recuperar">Recuperar</string>
+    //Strings de fargment herramientas
+    <string name="nombreherramienta">Ingresar Animal</string>
+    <string name="descherramienta">Descripción</string>
+    <string name="cantidadherramienta">Aula </string>
+    <string name="fotoherramienta">Foto Herramienta</string>
+    <string name="headerherramienta">Agregar salón</string>
+    <string name="headermodi">Modificar animal</string>
+    <string name="registrate">Regístrate</string>
+</resources>

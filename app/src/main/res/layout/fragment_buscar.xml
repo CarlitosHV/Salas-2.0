@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".buscar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/toolbarconsultar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/colorPrimaryVariant"
+                    app:title="@string/consultar"/>
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivFotoprodconsultar"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/imagenprod"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="25dp"
+                    app:endIconMode="clear_text"
+                    app:startIconContentDescription="@string/idprodbuscar"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/idprodconsultar"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="@string/idprodbuscar"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnconsultarbuscar"
+                    style="@style/Widget.Material3.Button.Icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_gravity="center"
+                    android:text="@string/botonbuscar"
+                    android:textSize="20sp"
+                    />
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                app:endIconMode="clear_text"
+                app:startIconContentDescription="@string/nombreprod"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nombreprodconsultar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:layout_editor_absoluteX="16dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                app:endIconMode="clear_text"
+                app:startIconContentDescription="@string/categoriaprod"
+               >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/categoriaconsultar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:layout_editor_absoluteX="16dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                app:endIconMode="clear_text"
+                app:startIconContentDescription="@string/descripcionprod"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/descriptionprodconsultar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="5"
+                    android:lines="1"
+                    tools:layout_editor_absoluteX="16dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

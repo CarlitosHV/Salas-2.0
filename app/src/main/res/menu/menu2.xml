@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/barhome"
+        android:enabled="true"
+        android:title="@string/inicio"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/barintereses"
+        android:enabled="true"
+        android:title="@string/anadir"
+        android:icon="@drawable/ic_intereses"/>
+
+    <item
+        android:id="@+id/barcuenta"
+        android:enabled="true"
+        android:title="@string/cuenta"
+        android:icon="@drawable/ic_cuenta"/>
+
+</menu>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment_prestamos">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/toolbarprestamos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/colorPrimaryVariant"
+                    app:title="@string/prestamos"/>
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnActivosPrestamos"
+                    android:layout_width="75dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="25dp"
+                    android:backgroundTint="@color/primaryDarkColor"
+                    />
+
+                <ImageButton
+                    android:id="@+id/btnInactivosPrestamos"
+                    android:layout_width="75dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginStart="150dp"
+                    android:backgroundTint="@color/primaryDarkColor" />
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/custom_list_view_prestamos"
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="50dp"
+                android:dividerHeight="2dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabrprestamos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:contentDescription="@string/nombre_usuarios"
+        android:layout_margin="16dp" />
+
+</FrameLayout>

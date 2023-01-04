@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_configuracion">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/toolbarconf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/colorPrimaryVariant"
+                    app:title="@string/configuracion"/>
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/configuracionlabel"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="20dp"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/btnconfiguracioneditar"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/configuracionEditar"
+                android:textSize="20sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="25dp"
+                app:endIconMode="clear_text"
+                app:startIconContentDescription="@string/configuracionNombre">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nombre_cliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/configuracionCorreo"
+                    android:inputType="textPersonName"
+                    tools:layout_editor_absoluteX="16dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                app:endIconMode="password_toggle"
+                app:startIconContentDescription="@string/configuracionConfirmarPass">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/confirmarpassword_cliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/configuracionConfirmarPass"
+                    android:inputType="textPassword"
+                    tools:layout_editor_absoluteX="16dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/headerubi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/headerubi"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="25dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="25dp"
+                android:id="@+id/coordenadas"
+                android:text="@string/coordenadas"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btnconfiguracionAceptar"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:text="@string/configuracionAceptar"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/loadingConfig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="64dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"/>
+
+
+</FrameLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "192855621128",
+    "project_id": "salas-1138a",
+    "storage_bucket": "salas-1138a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192855621128:android:7bb260bdd5a9142e6e1bbd",
+        "android_client_info": {
+          "package_name": "com.example.salas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192855621128-q28alehjbtd9d3qpi5rjpct5tnujguj6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.salas",
+            "certificate_hash": "f0b071be3f260bfe4d8139cb7f3e9839313d5c04"
+          }
+        },
+        {
+          "client_id": "192855621128-2bcm00qodk9cbt3ac464ti0pftf54ib0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxue6NeqpsFyAAwPvh_qSE2UjFKpaoq2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192855621128-2bcm00qodk9cbt3ac464ti0pftf54ib0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

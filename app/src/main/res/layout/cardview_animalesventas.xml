@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="6dp"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="155dp">
+
+        <ImageView
+            android:id="@+id/imagenAnimal"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_perfil" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/peso"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/peso"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre_animal"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="25dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/nombre_animal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre_vendedor"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="55dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/nombre_vendedor"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre_vendedor"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="85dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/nombre_comprador"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/precio"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="115dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/precio"
+            />
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

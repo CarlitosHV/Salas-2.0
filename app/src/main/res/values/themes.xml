@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Salas" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@color/primaryTextColor</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryLightColor</item>
+        <item name="colorOnSecondary">@color/secondaryTextColor</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimarySurface"> @color/material_dynamic_tertiary99</item>
+        <item name="colorOnSurfaceVariant"> @color/secondaryDarkColor</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Salas.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Salas.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Salas.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

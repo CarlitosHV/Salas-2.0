@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu_Admin">
+
+    <FrameLayout
+        android:id="@+id/fragments_admin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_weight="1"></FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationViewAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_gravity="bottom"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+        app:menu="@menu/menu_admin"/>
+
+</LinearLayout>

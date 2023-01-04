@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuadmincategorias"
+        app:showAsAction="always"
+        android:title="@string/admincategorias"/>
+
+    <item
+        android:id="@+id/menuadminusuarios"
+        app:showAsAction="always"
+        android:title="@string/usuarios" />
+
+    <item
+        android:id="@+id/menuadminregistros"
+        app:showAsAction="always"
+        android:title="@string/adminregistros"/>
+
+    <item
+        android:id="@+id/menuadminsolicitudes"
+        app:showAsAction="always"
+        android:title="@string/adminsolicitudes"/>
+
+    <item
+        android:id="@+id/menuadminconfiguracion"
+        app:showAsAction="always"
+        android:title="@string/adminconfiguracion"/>
+</menu>

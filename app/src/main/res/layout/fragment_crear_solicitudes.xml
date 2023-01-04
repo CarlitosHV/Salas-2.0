@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment_crear_solicitudes">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/toolbarcrearsolicitudes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/colorPrimaryVariant"
+                    app:title="@string/solicitudes"/>
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:layout_marginTop="25dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                app:endIconMode="clear_text"
+                app:startIconCheckable="true"
+                app:startIconContentDescription="@string/fechaprestamo"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fecha_prestamo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/fechaprestamo"
+                    android:inputType="date"
+                    tools:layout_editor_absoluteX="16dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                app:endIconMode="clear_text"
+                app:startIconCheckable="true"
+                app:startIconContentDescription="@string/comentario"
+               >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/comentarios"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/comentario"
+                    android:inputType="textPersonName"
+                    tools:layout_editor_absoluteX="16dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ListView
+                android:id="@+id/custom_list_view_registros"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="50dp"
+                android:dividerHeight="2dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnconfiguracionAceptar"
+                    style="@style/Widget.Material3.Button.ElevatedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/configuracionAceptar"
+                    android:textSize="20sp"
+                   />
+
+                <Button
+                    android:id="@+id/btnconfiguracionCancelar"
+                    style="@style/Widget.Material3.Button.ElevatedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/configuracionCancelar"
+                    android:textSize="20sp"
+                     />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

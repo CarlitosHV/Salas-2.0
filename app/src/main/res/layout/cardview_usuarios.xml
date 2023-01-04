@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="6dp"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre_usuarios"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="25dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/nombre_usuario"
+            />
+
+        <Button
+            android:id="@+id/btnconfirmar"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/boton_confirmar"
+            android:backgroundTint="#3aeb34"
+            android:textSize="7sp"
+            />
+
+        <Button
+            android:id="@+id/btncancelar"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="285dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/boton_cancelar"
+            android:textSize="7sp"
+            />
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
